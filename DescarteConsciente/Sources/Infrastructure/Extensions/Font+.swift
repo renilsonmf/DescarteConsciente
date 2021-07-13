@@ -8,5 +8,5 @@
 import UIKit
 
 public extension UIFont {
-    static let fontDefaultHelvetica = UIFont(name: "Helvetica", size: 17) ?? UIFont()
+    static let fontDefaultFutura = UIFont(name: "Futura", size: 20)! //?? UIFont()
 }

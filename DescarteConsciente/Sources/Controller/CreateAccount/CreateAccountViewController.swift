@@ -13,7 +13,8 @@ class CreateAccountViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .yellow
+        title = "Abra sua conta"
+        navigationTitleConfig(title: "Voltar")
     }
     
     override func loadView() {

@@ -9,7 +9,7 @@ import UIKit
 
 class ScreenInitialView: UIView {
     
-    var onLoginType: ((_ setLogin: LoginType) -> Void)
+    var onLoginType: ((_ setLogin: LoginType) -> Void)?
     
     //MARK: Initiator methods
 
@@ -45,7 +45,7 @@ class ScreenInitialView: UIView {
     func setLabelTop() {
         addSubview(labelTop)
         NSLayoutConstraint.activate([
-            labelTop.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 170),
+            labelTop.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 230),
             labelTop.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor)
         ])
     }
@@ -67,7 +67,7 @@ class ScreenInitialView: UIView {
     }
     @objc
     func actionButtonCreateAccount(sender: UIButton!) {
-        onLoginType(.CreateAccount)
+        onLoginType?(LoginType.CreateAccount)
     }
     
     //MARK: Button Login
@@ -84,6 +84,6 @@ class ScreenInitialView: UIView {
     }
     @objc
     func actionbuttonLogin(sender: UIButton!) {
-        onLoginType(.Login)
+        onLoginType?(LoginType.Login)
     }
 }

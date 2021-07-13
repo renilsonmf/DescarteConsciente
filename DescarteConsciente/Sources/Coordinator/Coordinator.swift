@@ -7,7 +7,7 @@
 
 import UIKit
 
-public  protocol Coordinator: AnyObject {
+public protocol Coordinator: AnyObject {
     func start()
 }
 

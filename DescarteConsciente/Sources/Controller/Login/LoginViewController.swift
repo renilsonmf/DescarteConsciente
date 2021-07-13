@@ -9,11 +9,17 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    let loginView = LoginView(frame: .zero)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue
+        title = "Login"
+        navigationTitleConfig(title: "Voltar")
     }
     
+    override func loadView() {
+        self.view = loginView
+    }
     
 }
 

@@ -9,7 +9,7 @@ import UIKit
 
 class ButtonComponent: UIButton {
     
-    init(title: String, background: UIColor = .clear, colorTitle: UIColor, fontText: UIFont = .fontDefaultHelvetica, radius: CGFloat = 0, colorBorder: UIColor = .clear, borderWidth: CGFloat = 0) {
+    init(title: String, background: UIColor = .clear, colorTitle: UIColor, fontText: UIFont = .fontDefaultFutura, radius: CGFloat = 0, colorBorder: UIColor = .clear, borderWidth: CGFloat = 0) {
         super.init(frame: .zero)
         self.frame = .zero
         self.translatesAutoresizingMaskIntoConstraints = false

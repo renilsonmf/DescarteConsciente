@@ -18,6 +18,6 @@ class CreateAccountView: UIView {
     }
     
     func createView() {
-        
+        self.backgroundColor = .white
     }
 }

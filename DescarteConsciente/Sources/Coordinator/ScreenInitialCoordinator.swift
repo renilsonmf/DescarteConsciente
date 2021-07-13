@@ -18,14 +18,20 @@ class ScreenInitialCoordinator: Coordinator {
         let screenInitialViewController = ScreenInitialViewController()
         
         screenInitialViewController.onLoginType = { setLogin in
-            switch setLogin {
-            case .CreateAccount:
-                <#code#>
-            case .Login:
-                <#code#>
-            }
+            self.setOptions(setLogin: setLogin)
         }
         
         self.navigationController.pushViewController(screenInitialViewController, animated: true)
+    }
+    
+    private func setOptions(setLogin: LoginType) {
+        switch setLogin {
+        case .CreateAccount:
+            let coordinator = CreateAccountCoordinator(navigationController: self.navigationController)
+            coordinator.start()
+        case .Login:
+            let coordinator = LoginCoordinator(navigationController: self.navigationController)
+            coordinator.start()
+        }
     }
 }
