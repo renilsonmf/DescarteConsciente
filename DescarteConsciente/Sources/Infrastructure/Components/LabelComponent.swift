@@ -9,7 +9,7 @@ import UIKit
 
 class LabelComponent: UILabel {
     
-    init(_ title: String = String.empty, _ fontColor: UIColor = .white, fontText: UIFont = .fontDefaultFutura, _ textAlign: NSTextAlignment = .left, _ frameL: CGRect = .zero) {
+    init(_ title: String = String.empty, _ fontColor: UIColor = .white, fontText: UIFont = .fontSubtitleAvenir, _ textAlign: NSTextAlignment = .left, _ frameL: CGRect = .zero) {
         super.init(frame: frameL)
         self.font = fontText
         self.text = title

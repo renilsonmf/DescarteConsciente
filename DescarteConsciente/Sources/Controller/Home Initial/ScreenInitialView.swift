@@ -36,12 +36,12 @@ class ScreenInitialView: UIView {
                 
         addSubview(imageIconRecycle)
         NSLayoutConstraint.activate([
-            imageIconRecycle.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 100),
+            imageIconRecycle.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 140),
             imageIconRecycle.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor)
         ])
     }
-    //MARK: Label
-    lazy var labelTop: UILabel = {LabelComponent("Descarte Consciente", .white, .center)}()
+    //MARK: Label title
+    lazy var labelTop: UILabel = {LabelComponent("Descarte Consciente", .white, fontText: .fontTitleAvenir, .center)}()
     func setLabelTop() {
         addSubview(labelTop)
         NSLayoutConstraint.activate([

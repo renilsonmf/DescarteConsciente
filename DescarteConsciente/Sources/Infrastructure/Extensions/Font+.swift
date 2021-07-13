@@ -8,5 +8,8 @@
 import UIKit
 
 public extension UIFont {
-    static let fontDefaultFutura = UIFont(name: "Futura", size: 20)! //?? UIFont()
+    
+    static let fontTitleAvenir = UIFont(name: "Avenir", size: 30) ?? UIFont()
+    static var fontSubtitleAvenir = UIFont(name: "Avenir", size: 18) ?? UIFont()
+
 }

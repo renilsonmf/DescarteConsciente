@@ -25,6 +25,7 @@
 		1C92E641269E0738004D838F /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E640269E0738004D838F /* CreateAccountViewController.swift */; };
 		1C92E649269E074A004D838F /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E648269E074A004D838F /* CreateAccountView.swift */; };
 		1CC3C37F269E1EFA00FA8A70 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC3C37E269E1EFA00FA8A70 /* UIViewController+.swift */; };
+		1CC3C384269E340900FA8A70 /* TextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC3C383269E340900FA8A70 /* TextField+.swift */; };
 		1CC7F0212697D50A00C3EB90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7F0202697D50A00C3EB90 /* AppDelegate.swift */; };
 		1CC7F0232697D50A00C3EB90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7F0222697D50A00C3EB90 /* SceneDelegate.swift */; };
 		1CC7F0252697D50A00C3EB90 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7F0242697D50A00C3EB90 /* LoginViewController.swift */; };
@@ -72,6 +73,7 @@
 		1C92E640269E0738004D838F /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		1C92E648269E074A004D838F /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		1CC3C37E269E1EFA00FA8A70 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		1CC3C383269E340900FA8A70 /* TextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+.swift"; sourceTree = "<group>"; };
 		1CC7F01D2697D50A00C3EB90 /* DescarteConsciente.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DescarteConsciente.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC7F0202697D50A00C3EB90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CC7F0222697D50A00C3EB90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				1C92E627269DCF70004D838F /* Image+.swift */,
 				1C92E631269DFCC1004D838F /* Font+.swift */,
 				1CC3C37E269E1EFA00FA8A70 /* UIViewController+.swift */,
+				1CC3C383269E340900FA8A70 /* TextField+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				1C92E62D269DCFE2004D838F /* ImageComponent.swift in Sources */,
 				1CC3C37F269E1EFA00FA8A70 /* UIViewController+.swift in Sources */,
 				1C92E5FF269DC2CE004D838F /* ScreenInitialView.swift in Sources */,
+				1CC3C384269E340900FA8A70 /* TextField+.swift in Sources */,
 				1C92E641269E0738004D838F /* CreateAccountViewController.swift in Sources */,
 				1C92E620269DCE34004D838F /* Color+.swift in Sources */,
 				1CC7F0252697D50A00C3EB90 /* LoginViewController.swift in Sources */,
