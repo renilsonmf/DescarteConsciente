@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C2DA65426A0A4B3003BF621 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DA65326A0A4B3003BF621 /* AlertController.swift */; };
+		1C2DA65926A0A80D003BF621 /* AccessType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DA65826A0A80D003BF621 /* AccessType.swift */; };
 		1C7F56B5269E0A6E004BAB8E /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F56B4269E0A6E004BAB8E /* LoginCoordinator.swift */; };
 		1C7F56BA269E0A80004BAB8E /* CreateAccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F56B9269E0A80004BAB8E /* CreateAccountCoordinator.swift */; };
 		1C92E5EE269DC0C6004D838F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5ED269DC0C6004D838F /* LoginView.swift */; };
@@ -55,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C2DA65326A0A4B3003BF621 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		1C2DA65826A0A80D003BF621 /* AccessType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessType.swift; sourceTree = "<group>"; };
 		1C7F56B4269E0A6E004BAB8E /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		1C7F56B9269E0A80004BAB8E /* CreateAccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountCoordinator.swift; sourceTree = "<group>"; };
 		1C92E5ED269DC0C6004D838F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 			children = (
 				1CC7F0242697D50A00C3EB90 /* LoginViewController.swift */,
 				1C92E5ED269DC0C6004D838F /* LoginView.swift */,
+				1C2DA65326A0A4B3003BF621 /* AlertController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				1C92E637269E054C004D838F /* LoginType.swift */,
+				1C2DA65826A0A80D003BF621 /* AccessType.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -408,6 +414,8 @@
 				1C92E649269E074A004D838F /* CreateAccountView.swift in Sources */,
 				1C7F56B5269E0A6E004BAB8E /* LoginCoordinator.swift in Sources */,
 				1C92E638269E054C004D838F /* LoginType.swift in Sources */,
+				1C2DA65426A0A4B3003BF621 /* AlertController.swift in Sources */,
+				1C2DA65926A0A80D003BF621 /* AccessType.swift in Sources */,
 				1C92E610269DC9D2004D838F /* ButtonComponent.swift in Sources */,
 				1C7F56BA269E0A80004BAB8E /* CreateAccountCoordinator.swift in Sources */,
 				1C92E604269DC5A3004D838F /* Coordinator.swift in Sources */,
