@@ -88,7 +88,7 @@ class CreateAccountView: UIView {
         var bottomLine = CALayer()
         let myTextField = UITextField()
         myTextField.translatesAutoresizingMaskIntoConstraints = false
-        myTextField.placeholder = "ex@example.com"
+        myTextField.placeholder = "Digite seu Email"
         myTextField.backgroundColor = .white
         myTextField.setBottomBorder()
         return myTextField
@@ -118,7 +118,8 @@ class CreateAccountView: UIView {
         var bottomLine = CALayer()
         let myTextField = UITextField()
         myTextField.translatesAutoresizingMaskIntoConstraints = false
-        myTextField.placeholder = "********"
+        myTextField.placeholder = "Digite sua Senha"
+        myTextField.isSecureTextEntry = true
         myTextField.backgroundColor = .white
         myTextField.setBottomBorder()
         return myTextField

@@ -36,28 +36,26 @@ class CreateAccountViewController: UIViewController{
             let name: String = self.createAccountView.textFieldName.text ?? ""
             let email: String = self.createAccountView.textFieldEmail.text ?? ""
             let password: String = self.createAccountView.textFieldPassword.text ?? ""
-                        
             self.auth?.createUser(withEmail: email, password: password, completion: { (result, error) in
                 if error != nil{
-                    print("Falha ao tentar criar uma conta")
+                    self.showDefaultAlert("Atenção", "Falha ao tentar criar a conta")
                 }else{
-                    print("Conta criada com sucesso")
+                    self.showDefaultAlert("Parabéns", "Conta criada com sucesso!!")
                 }
             })
         }
     }
-        
-        
-        private func configScroll() {
-            scrollView.backgroundColor = .white
-            scrollView.addSubview(createAccountView)
-            createAccountView.translatesAutoresizingMaskIntoConstraints = false
-            NSLayoutConstraint.activate([
-                createAccountView.widthAnchor.constraint(equalTo: self.scrollView.widthAnchor),
-                createAccountView.topAnchor.constraint(equalTo: self.scrollView.topAnchor),
-                createAccountView.bottomAnchor.constraint(equalTo: self.scrollView.bottomAnchor),
-                createAccountView.bottomAnchor.constraint(equalTo: createAccountView.buttonCreateAccount.bottomAnchor, constant: 300)
-            ])
-            self.view = scrollView
-        }
+    
+    private func configScroll() {
+        scrollView.backgroundColor = .white
+        scrollView.addSubview(createAccountView)
+        createAccountView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            createAccountView.widthAnchor.constraint(equalTo: self.scrollView.widthAnchor),
+            createAccountView.topAnchor.constraint(equalTo: self.scrollView.topAnchor),
+            createAccountView.bottomAnchor.constraint(equalTo: self.scrollView.bottomAnchor),
+            createAccountView.bottomAnchor.constraint(equalTo: createAccountView.buttonCreateAccount.bottomAnchor, constant: 300)
+        ])
+        self.view = scrollView
+    }
 }

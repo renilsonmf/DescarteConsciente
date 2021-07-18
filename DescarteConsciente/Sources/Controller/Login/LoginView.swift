@@ -58,7 +58,7 @@ class LoginView: UIView {
         var bottomLine = CALayer()
         let myTextField = UITextField()
         myTextField.translatesAutoresizingMaskIntoConstraints = false
-        myTextField.placeholder = "ex@example.com"
+        myTextField.placeholder = "Digite seu Email"
         myTextField.backgroundColor = .white
         myTextField.setBottomBorder()
         return myTextField
@@ -88,8 +88,9 @@ class LoginView: UIView {
         var bottomLine = CALayer()
         let myTextField = UITextField()
         myTextField.translatesAutoresizingMaskIntoConstraints = false
-        myTextField.placeholder = "********"
+        myTextField.placeholder = "Digite sua Senha"
         myTextField.backgroundColor = .white
+        myTextField.isSecureTextEntry = true
         myTextField.setBottomBorder()
         return myTextField
     }()
