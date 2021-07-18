@@ -11,6 +11,7 @@ class LoginViewController: UIViewController {
 
     var onAccessType: ((_ accessType: AccessType) -> Void)?
     let alertController = AlertController()
+    let scrollView: UIScrollView = UIScrollView(frame: .zero)
     let loginView = LoginView(frame: .zero)
     
     override func viewDidLoad() {
@@ -18,10 +19,12 @@ class LoginViewController: UIViewController {
         title = "Login"
         navigationTitleConfig(title: "Voltar")
         getActionButtons()
+        configScroll()
     }
     
     override func loadView() {
-        self.view = loginView
+        self.view = scrollView
+        scrollView.addSubview(loginView)
     }
     private func getActionButtons() {
         loginView.onAccessType = { options in
@@ -33,6 +36,18 @@ class LoginViewController: UIViewController {
                 print("Sera direcionado para a area logada")
             }
         }
+    }
+    private func configScroll() {
+        scrollView.backgroundColor = .white
+        scrollView.addSubview(loginView)
+        loginView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            loginView.widthAnchor.constraint(equalTo: self.scrollView.widthAnchor),
+            loginView.topAnchor.constraint(equalTo: self.scrollView.topAnchor),
+            loginView.bottomAnchor.constraint(equalTo: self.scrollView.bottomAnchor),
+            loginView.bottomAnchor.constraint(equalTo: loginView.buttonLogin.bottomAnchor, constant: 300)
+        ])
+        self.view = scrollView
     }
 }
 

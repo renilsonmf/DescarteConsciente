@@ -10,6 +10,8 @@ import UIKit
 class LoginView: UIView {
     
     var onAccessType: ((_ accessType: AccessType) -> Void)?
+    let scrollView = UIScrollView(frame: .zero)
+    let contentview = UIView(frame: .zero)
     
     //MARK: Inicializadores
     override init(frame: CGRect) {
