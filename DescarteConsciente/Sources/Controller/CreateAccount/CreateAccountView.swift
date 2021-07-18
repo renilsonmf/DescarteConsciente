@@ -134,13 +134,13 @@ class CreateAccountView: UIView {
         ])
     }
 
-    //MARK: Button Login
+    //MARK: Button Create Account
     lazy var buttonCreateAccount: UIButton = {ButtonComponent(title: "CRIAR CONTA", background: .colorMainGreen, colorTitle: .white, fontText: .fontSubtitleAvenir, radius: 20)}()
     private func setButtonCreateAccount() {
         addSubview(buttonCreateAccount)
         buttonCreateAccount.addTarget(self, action: #selector(actionButtonCreateAccount), for: .touchUpInside)
         NSLayoutConstraint.activate([
-            buttonCreateAccount.topAnchor.constraint(equalTo: textFieldPassword.bottomAnchor, constant: 20),
+            buttonCreateAccount.topAnchor.constraint(equalTo: textFieldPassword.bottomAnchor, constant: 70),
             buttonCreateAccount.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -30),
             buttonCreateAccount.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 30),
             buttonCreateAccount.heightAnchor.constraint(equalToConstant: 50)

@@ -22,7 +22,8 @@ public class AlertController: UIAlertController {
         let cancel = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
         alert.addAction(cancel)
         let ok = UIAlertAction(title: "Ok", style: .default) { (action) in
-            guard let email = alert.textFields?.first?.text else { return }
+            self.showActivity()
+            guard let email = alert.textFields?.first?.text?.lowercased() else { return }
             self.auth?.sendPasswordReset(withEmail: email, completion: { (error) in
                 if error == nil{
                     
@@ -49,6 +50,7 @@ public class AlertController: UIAlertController {
             }
             alert.addAction(ok)
             view.present(alert, animated: true, completion: nil)
+            self.removeActivity()
         }
     }
     
@@ -58,6 +60,7 @@ public class AlertController: UIAlertController {
             let ok = UIAlertAction(title: "Ok", style: .default)
             alert.addAction(ok)
             view.present(alert, animated: true, completion: nil)
+            self.removeActivity()
         }
     }
    

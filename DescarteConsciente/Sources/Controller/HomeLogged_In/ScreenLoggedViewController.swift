@@ -9,9 +9,11 @@ import UIKit
 class ScreenLoggedViewController: UIViewController {
     
     let screenLoggedView = ScreenLoggedView(frame: .zero)
-    
+    var onLoggoff: (() -> Void)?
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.removeActivity()
+        setActionButtonLoggoff()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -26,5 +28,11 @@ class ScreenLoggedViewController: UIViewController {
     
     override func loadView() {
         self.view = screenLoggedView
+    }
+    
+    func setActionButtonLoggoff() {
+        screenLoggedView.onLoggoff = {
+            self.onLoggoff?()
+        }
     }
 }

@@ -13,6 +13,8 @@ class CreateAccountViewController: UIViewController{
     var onCreateAccount: (() -> Void)?
     let createAccountView = CreateAccountView(frame: .zero)
     let scrollView: UIScrollView = UIScrollView(frame: .zero)
+    var onLoggedType: ((_ loggedType: LoggedType) -> Void)?
+
     
     var auth: Auth?
     
@@ -33,14 +35,17 @@ class CreateAccountViewController: UIViewController{
     
     private func getActionButtonCreateAccount() {
         createAccountView.onCreateAccount = {
-            let name: String = self.createAccountView.textFieldName.text ?? ""
-            let email: String = self.createAccountView.textFieldEmail.text ?? ""
+            
+            guard let name = self.createAccountView.textFieldName.text  else {return}
+            UserDefaults.standard.set(name, forKey: "nickname")
+            
+            let email: String = self.createAccountView.textFieldEmail.text?.lowercased() ?? ""
             let password: String = self.createAccountView.textFieldPassword.text ?? ""
             self.auth?.createUser(withEmail: email, password: password, completion: { (result, error) in
                 if error != nil{
                     self.showDefaultAlert("Atenção", "Falha ao tentar criar a conta")
                 }else{
-                    self.showDefaultAlert("Parabéns", "Conta criada com sucesso!!")
+                    self.onLoggedType?(.OpenAccount)
                 }
             })
         }

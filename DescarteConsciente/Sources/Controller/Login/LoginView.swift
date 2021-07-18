@@ -126,7 +126,7 @@ class LoginView: UIView {
         addSubview(buttonLogin)
         buttonLogin.addTarget(self, action: #selector(actionButtonLogin), for: .touchUpInside)
         NSLayoutConstraint.activate([
-            buttonLogin.topAnchor.constraint(equalTo: self.buttonForgotPassword.bottomAnchor, constant: 20),
+            buttonLogin.topAnchor.constraint(equalTo: self.buttonForgotPassword.bottomAnchor, constant: 70),
             buttonLogin.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -30),
             buttonLogin.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 30),
             buttonLogin.heightAnchor.constraint(equalToConstant: 50)

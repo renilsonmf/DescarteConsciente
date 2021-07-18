@@ -21,6 +21,7 @@ extension UIViewController {
             let ok = UIAlertAction(title: "Ok", style: .default)
             alert.addAction(ok)
             self.present(alert, animated: true, completion: nil)
+            self.removeActivity()
         }
     }
     

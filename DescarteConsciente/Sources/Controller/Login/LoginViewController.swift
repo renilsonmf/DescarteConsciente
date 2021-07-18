@@ -40,7 +40,8 @@ class LoginViewController: UIViewController {
                 self.present(alert, animated: true, completion: nil)
                 
             case .AccessLogin:
-                let email = self.loginView.textFieldEmail.text ?? ""
+                self.showActivity()
+                let email = self.loginView.textFieldEmail.text?.lowercased() ?? ""
                 let password = self.loginView.textFieldPassword.text ?? ""
                 self.auth?.signIn(withEmail: email, password: password, completion: { (user, error) in
                     if error != nil {
@@ -50,7 +51,6 @@ class LoginViewController: UIViewController {
                             self.showDefaultAlert("Atenção", "Verifique os campos")
                         }else{
                             self.onLoggedType?(.Login)
-                            print("Login Efetuado c sucesso")
                         }
                     }
                 })
