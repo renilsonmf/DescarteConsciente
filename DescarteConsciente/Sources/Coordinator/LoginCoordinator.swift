@@ -16,10 +16,19 @@ class LoginCoordinator: Coordinator {
     }
     
     func start() {
-        DispatchQueue.main.async {
-            let loginViewController = LoginViewController()
-            self.navigationController.pushViewController(loginViewController, animated: true)
+        
+        let loginViewController = LoginViewController()
+        loginViewController.onLoggedType = { loggedType in
+            switch loggedType {
+            case .Login:
+                let coordinator = ScreenLoggedCoordinator(navigationController: self.navigationController)
+                coordinator.start()
+            case .OpenAccount:
+                break
+            }
         }
+        self.navigationController.pushViewController(loginViewController, animated: true)
+        
         
     }
     

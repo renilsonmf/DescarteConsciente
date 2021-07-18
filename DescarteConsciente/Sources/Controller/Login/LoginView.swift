@@ -58,7 +58,7 @@ class LoginView: UIView {
         var bottomLine = CALayer()
         let myTextField = UITextField()
         myTextField.translatesAutoresizingMaskIntoConstraints = false
-        myTextField.placeholder = "ex@example.com"
+        myTextField.placeholder = "Digite seu Email"
         myTextField.backgroundColor = .white
         myTextField.setBottomBorder()
         return myTextField
@@ -88,8 +88,9 @@ class LoginView: UIView {
         var bottomLine = CALayer()
         let myTextField = UITextField()
         myTextField.translatesAutoresizingMaskIntoConstraints = false
-        myTextField.placeholder = "********"
+        myTextField.placeholder = "Digite sua Senha"
         myTextField.backgroundColor = .white
+        myTextField.isSecureTextEntry = true
         myTextField.setBottomBorder()
         return myTextField
     }()
@@ -125,7 +126,7 @@ class LoginView: UIView {
         addSubview(buttonLogin)
         buttonLogin.addTarget(self, action: #selector(actionButtonLogin), for: .touchUpInside)
         NSLayoutConstraint.activate([
-            buttonLogin.topAnchor.constraint(equalTo: self.buttonForgotPassword.bottomAnchor, constant: 20),
+            buttonLogin.topAnchor.constraint(equalTo: self.buttonForgotPassword.bottomAnchor, constant: 70),
             buttonLogin.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -30),
             buttonLogin.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 30),
             buttonLogin.heightAnchor.constraint(equalToConstant: 50)

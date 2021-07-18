@@ -6,23 +6,49 @@
 //
 
 import UIKit
+import Firebase
 
 class CreateAccountViewController: UIViewController{
     
+    var onCreateAccount: (() -> Void)?
     let createAccountView = CreateAccountView(frame: .zero)
-    
     let scrollView: UIScrollView = UIScrollView(frame: .zero)
+    var onLoggedType: ((_ loggedType: LoggedType) -> Void)?
+
+    
+    var auth: Auth?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Abra sua conta"
         navigationTitleConfig(title: "Voltar")
         configScroll()
+        getActionButtonCreateAccount()
+        self.auth = Auth.auth()
     }
     
     override func loadView() {
         self.view = scrollView
         scrollView.addSubview(createAccountView)
+    }
+    
+    private func getActionButtonCreateAccount() {
+        createAccountView.onCreateAccount = {
+            
+            guard let name = self.createAccountView.textFieldName.text  else {return}
+            UserDefaults.standard.set(name, forKey: "nickname")
+            
+            let email: String = self.createAccountView.textFieldEmail.text?.lowercased() ?? ""
+            let password: String = self.createAccountView.textFieldPassword.text ?? ""
+            self.auth?.createUser(withEmail: email, password: password, completion: { (result, error) in
+                if error != nil{
+                    self.showDefaultAlert("Atenção", "Falha ao tentar criar a conta")
+                }else{
+                    self.onLoggedType?(.OpenAccount)
+                }
+            })
+        }
     }
     
     private func configScroll() {
@@ -37,6 +63,4 @@ class CreateAccountViewController: UIViewController{
         ])
         self.view = scrollView
     }
-    
-    
 }

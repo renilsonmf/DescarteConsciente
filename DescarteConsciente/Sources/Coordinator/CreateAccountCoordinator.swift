@@ -16,6 +16,17 @@ import UIKit
     
      func start() {
         let createAccountViewController = CreateAccountViewController()
+        
+        createAccountViewController.onLoggedType = { loggedType in
+            switch loggedType {
+            case .OpenAccount:
+                let coordinator = ScreenLoggedCoordinator(navigationController: self.navigationController)
+                coordinator.start()
+            case .Login:
+                break
+            }
+        }
+        
         self.navigationController.pushViewController(createAccountViewController, animated: true)
     }
     

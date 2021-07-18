@@ -8,6 +8,9 @@
 import UIKit
 
 class CreateAccountView: UIView {
+    
+    var onCreateAccount: (() -> Void)?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         createView()
@@ -85,7 +88,7 @@ class CreateAccountView: UIView {
         var bottomLine = CALayer()
         let myTextField = UITextField()
         myTextField.translatesAutoresizingMaskIntoConstraints = false
-        myTextField.placeholder = "ex@example.com"
+        myTextField.placeholder = "Digite seu Email"
         myTextField.backgroundColor = .white
         myTextField.setBottomBorder()
         return myTextField
@@ -115,7 +118,8 @@ class CreateAccountView: UIView {
         var bottomLine = CALayer()
         let myTextField = UITextField()
         myTextField.translatesAutoresizingMaskIntoConstraints = false
-        myTextField.placeholder = "********"
+        myTextField.placeholder = "Digite sua Senha"
+        myTextField.isSecureTextEntry = true
         myTextField.backgroundColor = .white
         myTextField.setBottomBorder()
         return myTextField
@@ -130,13 +134,13 @@ class CreateAccountView: UIView {
         ])
     }
 
-    //MARK: Button Login
+    //MARK: Button Create Account
     lazy var buttonCreateAccount: UIButton = {ButtonComponent(title: "CRIAR CONTA", background: .colorMainGreen, colorTitle: .white, fontText: .fontSubtitleAvenir, radius: 20)}()
     private func setButtonCreateAccount() {
         addSubview(buttonCreateAccount)
         buttonCreateAccount.addTarget(self, action: #selector(actionButtonCreateAccount), for: .touchUpInside)
         NSLayoutConstraint.activate([
-            buttonCreateAccount.topAnchor.constraint(equalTo: textFieldPassword.bottomAnchor, constant: 20),
+            buttonCreateAccount.topAnchor.constraint(equalTo: textFieldPassword.bottomAnchor, constant: 70),
             buttonCreateAccount.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -30),
             buttonCreateAccount.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 30),
             buttonCreateAccount.heightAnchor.constraint(equalToConstant: 50)
@@ -145,7 +149,7 @@ class CreateAccountView: UIView {
     
     @objc
     func actionButtonCreateAccount(sender: UIButton!) {
-
+        onCreateAccount?()
     }
 
 }
