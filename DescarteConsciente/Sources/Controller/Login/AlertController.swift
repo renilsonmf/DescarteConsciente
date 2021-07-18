@@ -28,7 +28,7 @@ public class AlertController: UIAlertController {
                 if error == nil{
                     
                     print("enviado com sucesso")
-                    self.showAlertSuccess(view: view, "Parabens", "Email enviado com sucesso")
+                    self.showAlertSuccess(view: view, "Parabéns", "Email enviado com sucesso")
                     return
                 }
                 print("Credenciais invalidas")
