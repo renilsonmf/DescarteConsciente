@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>93266790919-vje2jtqhsm4gh6flh8offb5068c68eva.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.93266790919-vje2jtqhsm4gh6flh8offb5068c68eva</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBkYlqHJ4NHJ3lEQvFClkX4RNPZ2SdM4sI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>93266790919</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>RenilsonMoreira.DescarteConsciente</string>
+	<key>PROJECT_ID</key>
+	<string>logindescarteconsciente</string>
+	<key>STORAGE_BUCKET</key>
+	<string>logindescarteconsciente.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:93266790919:ios:b559021219f495140fb8a2</string>
+</dict>
+</plist>

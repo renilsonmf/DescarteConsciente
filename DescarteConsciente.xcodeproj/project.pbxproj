@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1C2DA65426A0A4B3003BF621 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DA65326A0A4B3003BF621 /* AlertController.swift */; };
 		1C2DA65926A0A80D003BF621 /* AccessType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DA65826A0A80D003BF621 /* AccessType.swift */; };
+		1C49DE9126A475CB00B525DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C49DE9026A475CB00B525DC /* GoogleService-Info.plist */; };
 		1C7F56B5269E0A6E004BAB8E /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F56B4269E0A6E004BAB8E /* LoginCoordinator.swift */; };
 		1C7F56BA269E0A80004BAB8E /* CreateAccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F56B9269E0A80004BAB8E /* CreateAccountCoordinator.swift */; };
 		1C92E5EE269DC0C6004D838F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92E5ED269DC0C6004D838F /* LoginView.swift */; };
@@ -37,6 +38,9 @@
 		1CC7F0302697D51000C3EB90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC7F02E2697D51000C3EB90 /* LaunchScreen.storyboard */; };
 		1CC7F03B2697D51000C3EB90 /* DescarteConscienteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7F03A2697D51000C3EB90 /* DescarteConscienteTests.swift */; };
 		1CC7F0462697D51000C3EB90 /* DescarteConscienteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7F0452697D51000C3EB90 /* DescarteConscienteUITests.swift */; };
+		81C7B91125F0745CEEAEC365 /* Pods_DescarteConsciente.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D6B7ABDB5BC8D48219F17D5 /* Pods_DescarteConsciente.framework */; };
+		A71CDA98183810A038B9B68C /* Pods_DescarteConsciente_DescarteConscienteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4126C7BE01625B67B0DF132B /* Pods_DescarteConsciente_DescarteConscienteUITests.framework */; };
+		E2A633A3234037DD0A983C69 /* Pods_DescarteConscienteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E95BC516FA06C0543F930548 /* Pods_DescarteConscienteTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +61,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0961AF5C2D21B1EDAD68AA3D /* Pods-DescarteConsciente.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DescarteConsciente.debug.xcconfig"; path = "Target Support Files/Pods-DescarteConsciente/Pods-DescarteConsciente.debug.xcconfig"; sourceTree = "<group>"; };
 		1C2DA65326A0A4B3003BF621 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		1C2DA65826A0A80D003BF621 /* AccessType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessType.swift; sourceTree = "<group>"; };
+		1C49DE9026A475CB00B525DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1C7F56B4269E0A6E004BAB8E /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		1C7F56B9269E0A80004BAB8E /* CreateAccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountCoordinator.swift; sourceTree = "<group>"; };
 		1C92E5ED269DC0C6004D838F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -92,6 +98,14 @@
 		1CC7F0412697D51000C3EB90 /* DescarteConscienteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DescarteConscienteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC7F0452697D51000C3EB90 /* DescarteConscienteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescarteConscienteUITests.swift; sourceTree = "<group>"; };
 		1CC7F0472697D51000C3EB90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34609597188883D279ECD316 /* Pods-DescarteConscienteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DescarteConscienteTests.debug.xcconfig"; path = "Target Support Files/Pods-DescarteConscienteTests/Pods-DescarteConscienteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4126C7BE01625B67B0DF132B /* Pods_DescarteConsciente_DescarteConscienteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DescarteConsciente_DescarteConscienteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D6B7ABDB5BC8D48219F17D5 /* Pods_DescarteConsciente.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DescarteConsciente.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A82AF3F87B8CF3461CB3244 /* Pods-DescarteConsciente.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DescarteConsciente.release.xcconfig"; path = "Target Support Files/Pods-DescarteConsciente/Pods-DescarteConsciente.release.xcconfig"; sourceTree = "<group>"; };
+		C6B9DB34300406B08FA92675 /* Pods-DescarteConsciente-DescarteConscienteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DescarteConsciente-DescarteConscienteUITests.debug.xcconfig"; path = "Target Support Files/Pods-DescarteConsciente-DescarteConscienteUITests/Pods-DescarteConsciente-DescarteConscienteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E95BC516FA06C0543F930548 /* Pods_DescarteConscienteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DescarteConscienteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A646C96CFAD5658C81874F /* Pods-DescarteConsciente-DescarteConscienteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DescarteConsciente-DescarteConscienteUITests.release.xcconfig"; path = "Target Support Files/Pods-DescarteConsciente-DescarteConscienteUITests/Pods-DescarteConsciente-DescarteConscienteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FBA9D00244644CD74B98D646 /* Pods-DescarteConscienteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DescarteConscienteTests.release.xcconfig"; path = "Target Support Files/Pods-DescarteConscienteTests/Pods-DescarteConscienteTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C7B91125F0745CEEAEC365 /* Pods_DescarteConsciente.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2A633A3234037DD0A983C69 /* Pods_DescarteConscienteTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A71CDA98183810A038B9B68C /* Pods_DescarteConsciente_DescarteConscienteUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +234,8 @@
 				1CC7F0392697D51000C3EB90 /* DescarteConscienteTests */,
 				1CC7F0442697D51000C3EB90 /* DescarteConscienteUITests */,
 				1CC7F01E2697D50A00C3EB90 /* Products */,
+				F2FCA076F046653C7A0F87C0 /* Pods */,
+				35B71D76A6498CF3589537A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,6 +252,7 @@
 		1CC7F01F2697D50A00C3EB90 /* DescarteConsciente */ = {
 			isa = PBXGroup;
 			children = (
+				1C49DE9026A475CB00B525DC /* GoogleService-Info.plist */,
 				1CC7F0312697D51000C3EB90 /* Info.plist */,
 				1CC7F05A2697D52700C3EB90 /* Resources */,
 				1CC7F0562697D51D00C3EB90 /* Sources */,
@@ -280,6 +300,30 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		35B71D76A6498CF3589537A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D6B7ABDB5BC8D48219F17D5 /* Pods_DescarteConsciente.framework */,
+				4126C7BE01625B67B0DF132B /* Pods_DescarteConsciente_DescarteConscienteUITests.framework */,
+				E95BC516FA06C0543F930548 /* Pods_DescarteConscienteTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2FCA076F046653C7A0F87C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0961AF5C2D21B1EDAD68AA3D /* Pods-DescarteConsciente.debug.xcconfig */,
+				6A82AF3F87B8CF3461CB3244 /* Pods-DescarteConsciente.release.xcconfig */,
+				C6B9DB34300406B08FA92675 /* Pods-DescarteConsciente-DescarteConscienteUITests.debug.xcconfig */,
+				F9A646C96CFAD5658C81874F /* Pods-DescarteConsciente-DescarteConscienteUITests.release.xcconfig */,
+				34609597188883D279ECD316 /* Pods-DescarteConscienteTests.debug.xcconfig */,
+				FBA9D00244644CD74B98D646 /* Pods-DescarteConscienteTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -287,9 +331,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CC7F04A2697D51000C3EB90 /* Build configuration list for PBXNativeTarget "DescarteConsciente" */;
 			buildPhases = (
+				02D170D23E438542D12F8BC2 /* [CP] Check Pods Manifest.lock */,
 				1CC7F0192697D50A00C3EB90 /* Sources */,
 				1CC7F01A2697D50A00C3EB90 /* Frameworks */,
 				1CC7F01B2697D50A00C3EB90 /* Resources */,
+				BC782F76CA835FF3D1395572 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -304,6 +350,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CC7F04D2697D51000C3EB90 /* Build configuration list for PBXNativeTarget "DescarteConscienteTests" */;
 			buildPhases = (
+				8CF2FC257D4D44D5134248A0 /* [CP] Check Pods Manifest.lock */,
 				1CC7F0322697D51000C3EB90 /* Sources */,
 				1CC7F0332697D51000C3EB90 /* Frameworks */,
 				1CC7F0342697D51000C3EB90 /* Resources */,
@@ -322,9 +369,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CC7F0502697D51000C3EB90 /* Build configuration list for PBXNativeTarget "DescarteConscienteUITests" */;
 			buildPhases = (
+				E4474652B85DC433A9774912 /* [CP] Check Pods Manifest.lock */,
 				1CC7F03D2697D51000C3EB90 /* Sources */,
 				1CC7F03E2697D51000C3EB90 /* Frameworks */,
 				1CC7F03F2697D51000C3EB90 /* Resources */,
+				CE5DFE92E17FD039D5F1768C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -384,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CC7F0302697D51000C3EB90 /* LaunchScreen.storyboard in Resources */,
+				1C49DE9126A475CB00B525DC /* GoogleService-Info.plist in Resources */,
 				1CC7F02D2697D51000C3EB90 /* Assets.xcassets in Resources */,
 				1CC7F0282697D50A00C3EB90 /* Main.storyboard in Resources */,
 			);
@@ -404,6 +454,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02D170D23E438542D12F8BC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DescarteConsciente-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CF2FC257D4D44D5134248A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DescarteConscienteTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC782F76CA835FF3D1395572 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DescarteConsciente/Pods-DescarteConsciente-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DescarteConsciente/Pods-DescarteConsciente-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DescarteConsciente/Pods-DescarteConsciente-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE5DFE92E17FD039D5F1768C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DescarteConsciente-DescarteConscienteUITests/Pods-DescarteConsciente-DescarteConscienteUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DescarteConsciente-DescarteConscienteUITests/Pods-DescarteConsciente-DescarteConscienteUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DescarteConsciente-DescarteConscienteUITests/Pods-DescarteConsciente-DescarteConscienteUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4474652B85DC433A9774912 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DescarteConsciente-DescarteConscienteUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1CC7F0192697D50A00C3EB90 /* Sources */ = {
@@ -607,6 +760,7 @@
 		};
 		1CC7F04B2697D51000C3EB90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0961AF5C2D21B1EDAD68AA3D /* Pods-DescarteConsciente.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -625,6 +779,7 @@
 		};
 		1CC7F04C2697D51000C3EB90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A82AF3F87B8CF3461CB3244 /* Pods-DescarteConsciente.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -643,6 +798,7 @@
 		};
 		1CC7F04E2697D51000C3EB90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34609597188883D279ECD316 /* Pods-DescarteConscienteTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -664,6 +820,7 @@
 		};
 		1CC7F04F2697D51000C3EB90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBA9D00244644CD74B98D646 /* Pods-DescarteConscienteTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -685,6 +842,7 @@
 		};
 		1CC7F0512697D51000C3EB90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6B9DB34300406B08FA92675 /* Pods-DescarteConsciente-DescarteConscienteUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -704,6 +862,7 @@
 		};
 		1CC7F0522697D51000C3EB90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9A646C96CFAD5658C81874F /* Pods-DescarteConsciente-DescarteConscienteUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

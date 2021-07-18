@@ -8,6 +8,9 @@
 import UIKit
 
 class CreateAccountView: UIView {
+    
+    var onCreateAccount: (() -> Void)?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         createView()
@@ -145,7 +148,7 @@ class CreateAccountView: UIView {
     
     @objc
     func actionButtonCreateAccount(sender: UIButton!) {
-
+        onCreateAccount?()
     }
 
 }
