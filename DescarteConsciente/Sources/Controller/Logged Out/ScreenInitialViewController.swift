@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ScreenInitialViewController: UIViewController {
     
@@ -15,6 +16,9 @@ class ScreenInitialViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setActionButtons()
+        if Auth.auth().currentUser != nil {
+            self.onLoginType?(.AutoLogin)
+        }
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -34,6 +38,7 @@ class ScreenInitialViewController: UIViewController {
         screenInitialView.onLoginType = { setLogin in
             self.onLoginType?(setLogin)
         }
+        
     }
-    
 }
+

@@ -6,10 +6,13 @@
 //
 
 import UIKit
+import Firebase
+
 class ScreenLoggedViewController: UIViewController {
     
     let screenLoggedView = ScreenLoggedView(frame: .zero)
     var onLoggoff: (() -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.removeActivity()
@@ -33,6 +36,14 @@ class ScreenLoggedViewController: UIViewController {
     func setActionButtonLoggoff() {
         screenLoggedView.onLoggoff = {
             self.onLoggoff?()
+            do {
+                try Auth.auth().signOut()
+            } catch let logoutError {
+                print(logoutError)
+            }
+            
         }
     }
 }
+
+

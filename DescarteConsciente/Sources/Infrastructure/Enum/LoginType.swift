@@ -10,4 +10,5 @@ import UIKit
 enum LoginType: CodingKey {
     case Login
     case CreateAccount
+    case AutoLogin
 }

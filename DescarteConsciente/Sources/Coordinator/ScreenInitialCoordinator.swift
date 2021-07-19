@@ -32,6 +32,9 @@ class ScreenInitialCoordinator: Coordinator {
         case .Login:
             let coordinator = LoginCoordinator(navigationController: self.navigationController)
             coordinator.start()
+        case .AutoLogin:
+            let coordinator = ScreenLoggedCoordinator(navigationController: self.navigationController)
+            coordinator.start()
         }
     }
 }

@@ -37,10 +37,11 @@ class CreateAccountViewController: UIViewController{
         createAccountView.onCreateAccount = {
             
             guard let name = self.createAccountView.textFieldName.text  else {return}
+            guard let email = self.createAccountView.textFieldEmail.text else {return}
+            guard let password = self.createAccountView.textFieldPassword.text else {return}
+            
             UserDefaults.standard.set(name, forKey: "nickname")
             
-            let email: String = self.createAccountView.textFieldEmail.text?.lowercased() ?? ""
-            let password: String = self.createAccountView.textFieldPassword.text ?? ""
             self.auth?.createUser(withEmail: email, password: password, completion: { (result, error) in
                 if error != nil{
                     self.showDefaultAlert("Atenção", "Falha ao tentar criar a conta")
